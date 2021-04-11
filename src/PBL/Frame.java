@@ -35,7 +35,7 @@ class Frame extends JFrame {
 			PBL.class.getResource("../image_cafe/backButtonEntered.png"));
 	private ImageIcon backButtonBasicImage = new ImageIcon(PBL.class.getResource("../image_cafe/backButtonBasic.png"));
 
-	private Image backgroundCalFrame = new ImageIcon(PBL.class.getResource("../image_cafe/¸¶°¨Background(Title).jpg"))
+	private Image backgroundCalFrame = new ImageIcon(PBL.class.getResource("../image_cafe/ë§ˆê°Background(Title).jpg"))
 			.getImage();
 	private JLabel menuBar = new JLabel(new ImageIcon(PBL.class.getResource("../image_cafe/menuBar2.png")));
 
@@ -192,19 +192,19 @@ class Frame extends JFrame {
 		Panel() {
 			setLayout(null);
 			screen[0] = new JLabel("--------------------------------------------");
-			screen[1] = new JLabel("¾Æ¸Ş¸®Ä«³ë ÆÇ¸Å °Ç¼ö : " + PBL.cal_Americano + " °Ç¡¡");
-			screen[2] = new JLabel("ÇÁ¶óÆä ÆÇ¸Å °Ç¼ö : " + PBL.cal_Frappe + " °Ç¡¡");
-			screen[3] = new JLabel("Ä«Æä¶ó¶¼ ÆÇ¸Å °Ç¼ö : " + PBL.cal_CafeLatte + " °Ç¡¡");
-			screen[4] = new JLabel("Ä«ÇªÄ¡³ë ÆÇ¸Å °Ç¼ö : " + PBL.cal_Capuccino + " °Ç¡¡");
-			screen[5] = new JLabel("ÀÍ½ºÇÁ·¹½º ÆÇ¸Å °Ç¼ö : " + PBL.cal_Express + " °Ç¡¡");
-			screen[6] = new JLabel("¾ÆÀÌ½ºÆ¼ ÆÇ¸Å °Ç¼ö : " + PBL.cal_IceTea + " °Ç¡¡");
-			screen[7] = new JLabel("·¹¸ó¿¡ÀÌµå ÆÇ¸Å °Ç¼ö : " + PBL.cal_LemonAdes + " °Ç¡¡");
-			screen[8] = new JLabel("¹ĞÅ©Æ¼ ÆÇ¸Å °Ç¼ö : " + PBL.cal_MilkTea + " °Ç¡¡");
-			screen[9] = new JLabel("¾ÆÆ÷°¡Åä ÆÇ¸Å °Ç¼ö : " + PBL.cal_Affogato + " °Ç¡¡");
-			screen[10] = new JLabel("--------------------------------------------¡¡");
-			screen[11] = new JLabel("Ä«µå °è»ê : " + PBL.cal_card + " °Ç¡¡");
-			screen[12] = new JLabel("Çö±İ °è»ê : " + PBL.cal_money + " °Ç¡¡");
-			screen[13] = new JLabel("¼öÀÍ±İ : " + getCalmoney() + " ¿ø¡¡");
+			screen[1] = new JLabel("ì•„ë©”ë¦¬ì¹´ë…¸ íŒë§¤ ê±´ìˆ˜ : " + PBL.cal_Americano + " ê±´");
+			screen[2] = new JLabel("í”„ë¼í˜ íŒë§¤ ê±´ìˆ˜ : " + PBL.cal_Frappe + " ê±´");
+			screen[3] = new JLabel("ì¹´í˜ë¼ë–¼ íŒë§¤ ê±´ìˆ˜ : " + PBL.cal_CafeLatte + " ê±´");
+			screen[4] = new JLabel("ì¹´í‘¸ì¹˜ë…¸ íŒë§¤ ê±´ìˆ˜ : " + PBL.cal_Capuccino + " ê±´");
+			screen[5] = new JLabel("ìµìŠ¤í”„ë ˆìŠ¤ íŒë§¤ ê±´ìˆ˜ : " + PBL.cal_Express + " ê±´");
+			screen[6] = new JLabel("ì•„ì´ìŠ¤í‹° íŒë§¤ ê±´ìˆ˜ : " + PBL.cal_IceTea + " ê±´");
+			screen[7] = new JLabel("ë ˆëª¬ì—ì´ë“œ íŒë§¤ ê±´ìˆ˜ : " + PBL.cal_LemonAdes + " ê±´");
+			screen[8] = new JLabel("ë°€í¬í‹° íŒë§¤ ê±´ìˆ˜ : " + PBL.cal_MilkTea + " ê±´");
+			screen[9] = new JLabel("ì•„í¬ê°€í†  íŒë§¤ ê±´ìˆ˜ : " + PBL.cal_Affogato + " ê±´");
+			screen[10] = new JLabel("--------------------------------------------");
+			screen[11] = new JLabel("ì¹´ë“œ ê³„ì‚° : " + PBL.cal_card + " ê±´");
+			screen[12] = new JLabel("í˜„ê¸ˆ ê³„ì‚° : " + PBL.cal_money + " ê±´");
+			screen[13] = new JLabel("ìˆ˜ìµê¸ˆ : " + getCalmoney() + " ê±´");
 
 			for (int i = 0; i < 14; i++) {
 				screen[i].setBounds(130, 130 + 20 * (i + 1), 430, 22);
@@ -212,7 +212,7 @@ class Frame extends JFrame {
 				add(screen[i]);
 			}
 
-			JButton confirm = new JButton("È®ÀÎ");
+			JButton confirm = new JButton("í™•ì¸");
 			confirm.setBounds(305, 440, 60, 30);
 			confirm.addMouseListener(new MouseAdapter() {
 				public void mouseEntered(MouseEvent e) {
